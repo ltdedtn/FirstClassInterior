@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="container bg-light">
         <header>
             <div class="title">
@@ -45,57 +44,76 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div id="ceo-image">
-                        <img src="img/staff/ceo.jpg" class="img-fluid">
+                    <div id="employee7" onMouseOver="show('7')" onMouseOut="hide('7')">
+                        <div id="ceo-image">
+                            <button id="7" type="button" onclick="hideEmployee(this.id), showHideImage(), hideImage()"
+                                style="visibility: hidden">Hide
+                                CEO Image</button>
+                            <img src="img/staff/ceo.jpg" class="img-fluid">
+                        </div>
                     </div>
-                    <div id="md-image" style="display: none;">
-                        <img src="img/staff/md.webp" class="img-fluid">
+                    <div id="employee6">
+                        <div id="md-image" style="display: none;">
+                            <img src="img/staff/md.webp" class="img-fluid">
+                        </div>
                     </div>
-                    <button type="button" onclick="showHideImage()">Switch Image</button>
+                    <button type="button" id="imageSwitcher" style="visibility: visible;"
+                        onclick="showHideImage()">Switch Image</button>
                 </div>
                 <div class="col">
-                    <div id="ceo-message">
-                        <p><strong>My name is Ben and I am the Ceo of Captivate Interiors. My job is to oversee all opperations within the company.</strong></p>
-                    </div>
-                    <div id="md-message" style="display: none;">
-                        <p><strong>My name is Phill and I am the managing director of Captivate Interiors. My Job is to make sure that the goals of the company are met and exceded.</strong></p>
+                    <div id="employee7.5" onMouseOver="show('7.5')" onMouseOut="hide('7.5')">
+                        <div id="ceo-message">
+                            <button id="7.5" type="button" onclick="hideEmployee(this.id), showHideText(), hideText()"
+                                style="visibility: hidden">Hide
+                                Text</button>
+                            <p><strong>My name is Ben and I am the Ceo of Captivate Interiors. My job is to oversee all
+                                    opperations within the company.</strong></p>
+                        </div>
                     </div>
 
-                    <button type="button" onclick="showHideText()">Switch Text</button>
+                    <div id="employee6">
+                        <div id="md-message" style="display: none;">
+                            <p><strong>My name is Phill and I am the managing director of Captivate Interiors. My Job is
+                                    to
+                                    make sure that the goals of the company are met and exceded.</strong></p>
+                        </div>
+                    </div>
+                    <button id="textSwitcher" type="button" style="visibility: visible;" onclick="showHideText()">Switch
+                        Text</button>
                 </div>
             </div>
+        </div>
 
-            <div class="row" style="padding-top: 5px;">
-                <div class="col-sm" id="employee1" onMouseOver="show('1')" onMouseOut="hide('1')">
-                    <button id="1" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
-                        Employee</button>
-                    <img src="img/staff/employee1.webp" class="img-fluid" style="height: 100px;">
-                    <p><strong>Hey, my name is Grace im part of the marketing team</strong></p>
-                </div>
-                <div class="col-sm" id="employee2" onMouseOver="show('2')" onMouseOut="hide('2')">
-                    <button id="2" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
-                        Employee</button>
-                    <img src="img/staff/employee2.webp" class="img-fluid" style="height: 100px;">
-                    <p><strong>Hey, my name is Mike im part of the design team</strong></p>
-                </div>
-                <div class="col-sm" id="employee3" onMouseOver="show('3')" onMouseOut="hide('3')">
-                    <button id="3" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
-                        Employee</button>
-                    <img src="img/staff/employee3.jpg" class="img-fluid" style="height: 100px;">
-                    <p><strong>Hey, my name is Joe im part of the design</strong></p>
-                </div>
-                <div class="col-sm" id="employee4" onMouseOver="show('4')" onMouseOut="hide('4')">
-                    <button id="4" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
-                        Employee</button>
-                    <img src="img/staff/employee4.jpg" class="img-fluid" style="height: 100px;">
-                    <p><strong>Hey, my name is Bill im part of the managment team</strong></p>
-                </div>
-                <div class="col-sm" id="employee5" onMouseOver="show('5')" onMouseOut="hide('5')">
-                    <button id="5" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
-                        Employee</button>
-                    <img src="img/staff/employee5.jpg" class="img-fluid" style="height: 100px;">
-                    <p><strong>Hey, my name is Shara im part of the HR team</strong></p>
-                </div>
+        <div class="row" style="padding-top: 5px;">
+            <div class="col-sm" id="employee1" onMouseOver="show('1')" onMouseOut="hide('1')">
+                <button id="1" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
+                    Employee</button>
+                <img src="img/staff/employee1.webp" class="img-fluid" style="height: 100px;">
+                <p><strong>Hey, my name is Grace im part of the marketing team</strong></p>
+            </div>
+            <div class="col-sm" id="employee2" onMouseOver="show('2')" onMouseOut="hide('2')">
+                <button id="2" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
+                    Employee</button>
+                <img src="img/staff/employee2.webp" class="img-fluid" style="height: 100px;">
+                <p><strong>Hey, my name is Mike im part of the design team</strong></p>
+            </div>
+            <div class="col-sm" id="employee3" onMouseOver="show('3')" onMouseOut="hide('3')">
+                <button id="3" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
+                    Employee</button>
+                <img src="img/staff/employee3.jpg" class="img-fluid" style="height: 100px;">
+                <p><strong>Hey, my name is Joe im part of the design</strong></p>
+            </div>
+            <div class="col-sm" id="employee4" onMouseOver="show('4')" onMouseOut="hide('4')">
+                <button id="4" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
+                    Employee</button>
+                <img src="img/staff/employee4.jpg" class="img-fluid" style="height: 100px;">
+                <p><strong>Hey, my name is Bill im part of the managment team</strong></p>
+            </div>
+            <div class="col-sm" id="employee5" onMouseOver="show('5')" onMouseOut="hide('5')">
+                <button id="5" type="button" onclick="hideEmployee(this.id)" style="visibility: hidden">Hide
+                    Employee</button>
+                <img src="img/staff/employee5.jpg" class="img-fluid" style="height: 100px;">
+                <p><strong>Hey, my name is Shara im part of the HR team</strong></p>
             </div>
         </div>
         <footer class="bg-light text-center text-lg-start">
@@ -110,50 +128,54 @@
                     style="width: 50px; height: 50px;"></a>
         </footer>
     </div>
-    <script>
-        function showHideText() {
-            var x = document.getElementById("ceo-message");
-            var y = document.getElementById("md-message");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "none";
-                y.style.display = "block";
-            }
-        }
-        function showHideImage() {
-            var x = document.getElementById("ceo-image");
-            var y = document.getElementById("md-image");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-            } else {
-                x.style.display = "none";
-                y.style.display = "block";
-            }
-        }
-
-        function showTestButton(id_hover) {
-            var x = document.getElementById(id_hover);
+</body>
+<script>
+    function showHideText() {
+        var x = document.getElementById("ceo-message");
+        var y = document.getElementById("md-message");
+        if (x.style.display === "none") {
             x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
         }
+    }
+    function showHideImage() {
+        var x = document.getElementById("ceo-image");
+        var y = document.getElementById("md-image");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }
 
-        function hideEmployee(clicked_id) {
-            var x = document.getElementById('employee' + clicked_id);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
+    function hideEmployee(clicked_id) {
+        var x = document.getElementById('employee' + clicked_id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
         }
-        function show(id) {
-            document.getElementById(id).style.visibility = "visible";
-        }
-        function hide(id) {
-            document.getElementById(id).style.visibility = "hidden";
-        }
-    </script>
+    }
+    function show(id) {
+        document.getElementById(id).style.visibility = "visible";
+    }
+    function hide(id) {
+        document.getElementById(id).style.visibility = "hidden";
+    }
+    function hideText() {
+        var x = document.getElementById("textSwitcher");
+        x.style.visibility = "hidden";
+    }
+    function hideImage() {
+        var x = document.getElementById("imageSwitcher");
+        x.style.visibility = "hidden";
+    }
+</script>
 </body>
 
 </html>
